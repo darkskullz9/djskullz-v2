@@ -34,19 +34,50 @@
     <body>
         <!-- ========== HEADER ========== -->
         <header class="header" id="header">
+            <div class="header__container">
+                <a href="index.html" class="logo">DJ Skullz</a>
 
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
         </header>
 
         <!-- ========== MOBILE MENU ========== -->
-        <nav class="mobile-menu" id="mobile-menu">
-
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Main navigation">
+            <ul class="mobile-menu__list">
+                <li><a href="index.html" class="mobile-menu__link" active>Home</a></li>
+                <li><a href="mixes.html" class="mobile-menu__link">Mixes</a></li>
+                <li><a href="bio.html" class="mobile-menu__link">Bio</a></li>
+                <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+            </ul>
         </nav>
 
         <!-- ========== MAIN CONTENT ========== -->
         <main>
             <!-- ========== WELCOME SECTION ========== -->
             <section class="welcome-section">
+                <div class="welcome-section__content">
+                    <!-- Photo Group with overlapping effect -->
+                    <div class="welcome-section__photo-group">
+                        <div class="photo-frame photo-frame--back"></div>
+                        <img src="images/dj-photo-main.jpg" alt="DJ Skullz" class="photo-frame photo-frame--front">
+                    </div>
 
+                    <!-- Title -->
+                    <div class="welcome-section__title">
+                        <h1 class="title-small">DJ</h1>
+                        <h1 class="title-large">Skullz</h1>
+                    </div>
+
+                    <!-- Booking Button -->
+                     <a href="contact.html" class="btn-book">
+                        <span class="btn-book__text">Book<br/>Now&gt;</span>
+                     </a>
+                </div>
             </section>
 
             <!-- ========== MUSIC SECTION ========== -->
